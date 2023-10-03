@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "sso-app"
+client_id = "f6036207ff271c26bf082c923e6d367f"
+application_url = "https://analyses-mouse-lives-temporarily.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://analyses-mouse-lives-temporarily.trycloudflare.com/auth/callback",
+  "https://analyses-mouse-lives-temporarily.trycloudflare.com/auth/shopify/callback",
+  "https://analyses-mouse-lives-temporarily.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "store-demo-2023-test.myshopify.com"
